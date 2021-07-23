@@ -82,22 +82,14 @@ function filterByCountMinimum(animals, minimum) {
   } let animalCount = [];
   for(let i = 0; i < animals.length; i++){
     const animal = animals[i]
-    if(animal.count < minimum){
+  if(animal.count < minimum){
       animalCount.push(animal);
-    } else if (animal.count > minimum);{
+} else if (animal.count > minimum);{
       return [];
     }
   }
   return animalCount;
 }
-
-
-
-  
-
-
-
-
 
 /**
  * FUNCTION DESCRIPTION
@@ -115,16 +107,15 @@ function getMostCommonAnimal(animals) {
   if (animals.length === 0){
     return null;
   }   
-        let commonAnimal = animals[0];
-    for (let i = 0; i < animals.length; i++){
+      let commonAnimal = animals[0];
+  for (let i = 0; i < animals.length; i++){
          const animal = animals[i];
-    if (animal.count > commonAnimal.count){
+  if (animal.count > commonAnimal.count){
          commonAnimal = animal;
     }
   }
     return commonAnimal;
 }
-
 
 // Do not change anything below this line.
 module.exports = {
